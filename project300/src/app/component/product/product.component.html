@@ -1,0 +1,37 @@
+<div class="container">
+  <!-- ... (previous content) -->
+
+  <div class="search-product">
+    <input type="text" [(ngModel)]="searchTerm" placeholder="Search products" (input)="applyFilter()" />
+  </div>
+
+  <!-- Add margin here -->
+  <div class="product-list">
+    <ul>
+      <!-- Loop through and display products -->
+      <li *ngFor="let product of filteredproducts" class="product-item">
+        <div class="product-details">
+          <img [src]="product.imageUrl" alt="{{ product.name }}" class="product-image" width="75px" height="75px"/>
+
+          <div class="product-name">{{ product.name }}</div>
+        
+          <div class="product-price">{{ product.price }} dt</div>
+          <!-- Add more product details as needed -->
+        </div>
+        <div class="product-actions">
+          <button mat-icon-button class="editButton" (click)="editProduct(product.id,{})">
+            <mat-icon>edit</mat-icon>
+          </button>
+          <button mat-icon-button class="removeButton" (click)="removeProduct(product.id)">
+            <mat-icon>delete</mat-icon>
+          </button>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Create New product Button -->
+  <button mat-fab color="primary" class="circular-button" (click)="openCreateDialog()">
+    <mat-icon style="color: aliceblue;">add</mat-icon>
+  </button>
+</div>

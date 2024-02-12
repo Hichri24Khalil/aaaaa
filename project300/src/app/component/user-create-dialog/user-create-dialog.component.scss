@@ -1,0 +1,91 @@
+/* user-create-dialog.component.scss */
+
+/* Container styles */
+.dialog-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: center; /* Center vertically */
+    padding: 20px;
+  }
+  
+  /* Title styles */
+  .dialog-title {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center; /* Center text */
+  }
+  
+  /* Form group styles */
+  .form-group {
+    width: 100%; /* Set the form-group to 100% width */
+    margin-bottom: 20px; /* Add margin */
+  }
+  
+  /* Label styles */
+  label {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+  }
+  
+  /* Input styles */
+  .form-control {
+    width: 100%; /* Set the input fields to 100% width */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+ 
+  
+  
+  
+  
+  
+  /* Checkbox styles */
+  .checkbox-input {
+    margin-right: 5px;
+  }
+  
+  /* Actions styles */
+  .actions {
+    display: flex;
+    justify-content: center; /* Center buttons horizontally */
+    margin-top: 20px;
+  }
+  
+  /* Cancel button styles */
+  .cancel-button {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px; /* Increase button size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 10px; /* Add margin between buttons */
+  }
+  
+  .cancel-button:hover {
+    background-color: #c82333;
+  }
+  
+  /* Save button styles */
+  .save-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px 30px; /* Increase button size */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .save-button:hover {
+    background-color: #0056b3;
+  }
+  

@@ -1,0 +1,177 @@
+/* app/user-list/user-list.component.css */
+
+/* Container styles */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styles */
+.add-user {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.user-list{
+  padding: 10px;
+}
+
+.user-item{
+  padding: 20px;
+  //border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  //margin-bottom: 15px;
+}
+.add-user input[type="text"],
+.add-user input[type="password"],
+.add-user input[type="checkbox"],
+.add-user button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.add-user button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-user button:hover {
+  background-color: #0056b3;
+}
+
+/* Search styles */
+.search-user input[type="text"] {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* User list styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+}
+
+li .user-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+li .user-info span {
+  margin-bottom: 5px;
+}
+
+li button {
+ //background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.removeButton {
+  background-color: #dc3545; /* Red color */
+  color: #fff;
+  margin-left: 10px;
+}
+.editButton {
+  background-color: #ffc107; /* Red color */
+  color: #fff;
+  margin-left: 10px;
+}
+.user-name{
+  font-size: 16px;
+  color: #5556b3;
+}
+.user-email{
+  font-size: 14px;
+  color: black
+}
+.circular-button {
+  margin-left: 50%;
+  width: 50px; /* Set the width and height to create a circular shape */
+  height: 50px;
+  border: none;
+  background-color: #0056b3;
+  border-radius: 50%; /* Makes the button circular */
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+
+  /* Add any other custom styles here */
+}
+
+.circular-button:hover {
+  background-color: #5556b3; /* Change the background color on hover */
+}
+
+
+
+
+
+
+li button.edit-button {
+  background-color: #ffc107;
+  color: #333;
+  margin-right: 10px;
+}
+li button.delete-button {
+  background-color: #ffc107;
+  color: #333;
+  margin-right: 10px;
+}
+
+li button.remove-button:hover,
+li button.edit-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .add-user input[type="text"],
+  .add-user input[type="password"],
+  .add-user input[type="checkbox"],
+  .add-user button {
+    width: 100%;
+  }
+}

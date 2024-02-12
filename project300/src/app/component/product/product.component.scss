@@ -1,0 +1,205 @@
+/* app/product-list/product-list.component.css */
+
+/* Container styles */
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+h1 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Form styles */
+.add-product {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.product-list{
+  padding: 10px;
+}
+
+.product-item{
+  padding: 20px;
+  //border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  //margin-bottom: 15px;
+}
+.add-product input[type="text"],
+.add-product input[type="password"],
+.add-product input[type="checkbox"],
+.add-product button {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  flex: 1;
+}
+
+.add-product button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.add-product button:hover {
+  background-color: #0056b3;
+}
+
+/* Search styles */
+.search-product input[type="text"] {
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+/* product list styles */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+li:hover {
+  transform: translateY(-3px);
+}
+
+li .product-info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+li .product-info span {
+  margin-bottom: 5px;
+}
+
+li button {
+ //background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.removeButton {
+  background-color: #dc3545; /* Red color */
+  color: #fff;
+  margin-left: 10px;
+}
+.editButton {
+  background-color: #ffc107; /* Red color */
+  color: #fff;
+  margin-left: 10px;
+}
+.circular-button {
+  margin-left: 50%;
+  width: 50px; /* Set the width and height to create a circular shape */
+  height: 50px;
+  border: none;
+  background-color: #0056b3;
+  border-radius: 50%; /* Makes the button circular */
+  display: flex;
+  justify-content: center; /* Center the icon horizontally */
+  align-items: center; /* Center the icon vertically */
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Add a smooth transition on hover */
+
+  /* Add any other custom styles here */
+}
+
+.circular-button:hover {
+  background-color: #5556b3; /* Change the background color on hover */
+}
+
+
+
+product-item {
+  display: flex;
+  align-items: center; /* Vertically center the image and details */
+  margin-bottom: 10px; /* Add margin between product items */
+}
+
+.product-image {
+  border-radius: 10px; /* Apply border radius to the image */
+  height: 75px; /* Set the height to 10% of the parent container's height */
+  min-width: 75px; /* Set the minimum width to 10% of the parent container's width */
+  object-fit: cover; /* Maintain the image's aspect ratio and cover the container */
+  margin-right: 10px;
+  float: left;
+  
+   /* Add spacing between the image and details */
+}
+.product-name{
+  padding: 10px;
+  align-content: center;
+  margin-left: 10px;
+  margin-right: 10px;
+  float: left;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.product-price{
+  padding: 10px;
+  align-content: center;
+  margin-left: 50%;
+  margin-right: 10px;
+  margin-top: 20px;
+  font-size: 20px;
+
+}
+
+.product-details {
+  flex-grow: 1; /* Allow the product details to grow and take remaining space */
+}
+
+
+li button.edit-button {
+  background-color: #ffc107;
+  color: #333;
+  margin-right: 10px;
+}
+li button.delete-button {
+  background-color: #ffc107;
+  color: #333;
+  margin-right: 10px;
+}
+
+li button.remove-button:hover,
+li button.edit-button:hover {
+  background-color: #c82333;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .add-product input[type="text"],
+  .add-product input[type="password"],
+  .add-product input[type="checkbox"],
+  .add-product button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,34 @@
+<!-- user-create-dialog.component.html -->
+
+<div class="dialog-container">
+    <h2 class="dialog-title">Create New Product</h2>
+    <form>
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" [(ngModel)]="newProduct.name" name="name" class="form-control" required />
+      </div>
+      <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" id="price" [(ngModel)]="newProduct.price" name="price" class="form-control" required />
+      </div>
+       <div class="form-group">
+        <label for="stars">Stars</label>
+        <input type="number" id="stars" [(ngModel)]="newProduct.stars" name="stars" class="form-control" required />
+      </div> 
+
+     <!-- <div class="form-group">
+        <label for="address">Address</label>
+        <input type="text" id="address" [(ngModel)]="newProduct.stars" name="address" class="form-control" required />
+      </div>-->
+      
+      <div class="form-group">
+        <label for="picture">Choose a Picture</label>
+        <input type="file" id="picture"  (change)="onFileSelected($event)" accept="image/*" />
+      </div>
+    </form>
+    <div class="actions">
+      <button class="cancel-button" (click)="onCancelClick()">Cancel</button>
+      <button class="save-button" (click)="onSaveClick()" >Save</button>
+    </div>
+  </div>
+  

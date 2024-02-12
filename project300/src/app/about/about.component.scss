@@ -1,0 +1,26 @@
+.company-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.info-text {
+    flex: 1;
+    padding: 20px;
+}
+.info-image{
+    border-radius: 15px;
+}
+img{
+    border-radius: 15px;
+}
+
+.card{
+    border-radius: 15px;
+    margin-top: 15%;
+}
+.info-image {
+    flex: 1;
+    text-align: center;
+}
